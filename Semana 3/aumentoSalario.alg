@@ -26,6 +26,7 @@ inicio
             escreval("Opção inválida.")
             escreval("Deseja realizar novo aumento? Insira 'Sim'/'Nao'")
             leia(verificar)
+            verificar <- minusc(verificar)
          fimenquanto
       fimenquanto
 
