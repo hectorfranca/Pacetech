@@ -1,5 +1,8 @@
 algoritmo "conversor"
+// Autor : Héctor França
+// Data : 23/05/2022
 
+// Funções
 funcao realParaDolar(valorReal, cotacaoDolar : real) : real
 inicio
 retorne valorReal / cotacaoDolar
@@ -38,6 +41,7 @@ senao
 fimse
 fimfuncao
 
+// Procedimentos
 procedimento realParaDolarProc
 inicio
 escreval("Insira o valor em Real:")
@@ -116,6 +120,7 @@ enquanto (validaRepetir(repetir) = falso) faca
 fimenquanto
 fimprocedimento
 
+// Main
 var
 celcius : real
 fahrenheit : real
