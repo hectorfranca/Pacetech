@@ -6,10 +6,11 @@ var
    verificar : literal
 inicio
       verificar <- "sim"
+      verificar <- minusc(verificar)
 
       escreval("Bem vindo ao programa de aumento de salário em 30%")
 
-      enquanto ((minusc(verificar) = "sim") ou (minusc(verificar) = "s")) faca
+      enquanto ((verificar = "sim") ou (verificar = "s")) faca
          escreval("Insira o valor do seu salário:")
          leia(salario)
 
