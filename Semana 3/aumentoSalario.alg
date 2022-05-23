@@ -8,7 +8,7 @@ inicio
       verificar <- "sim"
 
       escreval("Bem vindo ao programa de aumento de salário em 30%")
-      
+
       enquanto ((minusc(verificar) = "sim") ou (minusc(verificar) = "s")) faca
          escreval("Insira o valor do seu salário:")
          leia(salario)
@@ -19,13 +19,14 @@ inicio
 
          escreval("Deseja realizar novo aumento? Insira 'Sim'/'Nao'")
          leia(verificar)
-         
-         enquanto ((minusc(verificar) <> "sim") e (minusc(verificar) <> "s") e (minusc(verificar) <> "nao") e (minusc(verificar) <> "n")) faca
+         verificar <- minusc(verificar)
+
+         enquanto ((verificar <> "sim") e (verificar <> "s") e (verificar <> "nao") e (verificar <> "n")) faca
             escreval("Opção inválida.")
             escreval("Deseja realizar novo aumento? Insira 'Sim'/'Nao'")
             leia(verificar)
          fimenquanto
       fimenquanto
-      
+
       escreval ("Obrigado por utilizar nosso sistema!")
 fimalgoritmo
