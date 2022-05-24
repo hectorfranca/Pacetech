@@ -70,6 +70,15 @@ leia(fahrenheit)
 escreval(fahrenheit," fahrenheit são ",fahrenheitParaCelcius(fahrenheit)," celcius.")
 fimprocedimento
 
+procedimento verificaOpcaoProc
+inicio
+enquanto (validaOpcao(opcao) = falso) faca
+   escreval("Opção inválida.")
+   escreval("Insira o valor correspondente a opção desejada: '1'/'2')")
+   leia(opcao)
+fimenquanto
+fimprocedimento
+
 procedimento conversaoMoedaProc
 inicio
 se (cotacaoDolar = 0) entao
@@ -80,7 +89,7 @@ escreval("1- Real para Dolar")
 escreval("2- Dolar para Real")
 escreval("Insira o valor correspondente a opção desejada:")
 leia(opcao)
-verificaOpcao
+verificaOpcaoProc
 escolha(opcao)
 caso "1"
    realParaDolarProc
@@ -95,7 +104,7 @@ escreval("1- Celcius para Fahrenheit")
 escreval("2- Fahrenheit para Celcius")
 escreval("Insira o valor correspondente a opção desejada:")
 leia(opcao)
-verificaOpcao
+verificaOpcaoProc
 escolha(opcao)
 caso "1"
    celciusParaFahrenheitProc
@@ -104,16 +113,7 @@ caso "2"
 fimescolha
 fimprocedimento
 
-procedimento verificaOpcao
-inicio
-enquanto (validaOpcao(opcao) = falso) faca
-   escreval("Opção inválida.")
-   escreval("Insira o valor correspondente a opção desejada: '1'/'2')")
-   leia(opcao)
-fimenquanto
-fimprocedimento
-
-procedimento verificaRepetir
+procedimento verificaRepetirProc
 inicio
 enquanto (validaRepetir(repetir) = falso) faca
    escreval("Opção inválida.")
@@ -139,7 +139,7 @@ repita
    escreval("2- Conversão de Temperatura")
    escreval("Insira o valor correspondente a opção desejada:")
    leia(opcao)
-   verificaOpcao
+   verificaOpcaoProc
    escolha(opcao)
    caso "1"
       conversaoMoedaProc
@@ -149,7 +149,7 @@ repita
    escreval("Deseja realizar outra conversão? 'Sim'/'Nao')")
    leia(repetir)
    repetir <- minusc(repetir)
-   verificaRepetir
+   verificaRepetirProc
 ate (repetir <> "sim") e (repetir <> "s")
 
 fimalgoritmo
