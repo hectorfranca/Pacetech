@@ -46,28 +46,28 @@ procedimento realParaDolarProc
 inicio
 escreval("Insira o valor em Real:")
 leia(valorReal)
-escreval(valorReal," reais são ",realParaDolar(valorReal, cotacaoDolar)," dolares.")
+escreval(valorReal," reais são ",realParaDolar(valorReal, cotacaoDolar):1:2," dolares.")
 fimprocedimento
 
 procedimento dolarParaRealProc
 inicio
 escreval("Insira o valor em Dolar:")
 leia(valorDolar)
-escreval(valorDolar," dolares são ",dolarParaReal(valorDolar, cotacaoDolar)," reais.")
+escreval(valorDolar," dolares são ",dolarParaReal(valorDolar, cotacaoDolar):1:2," reais.")
 fimprocedimento
 
 procedimento celciusParaFahrenheitProc
 inicio
 escreval("Digite o valor em Celcius:")
 leia(celcius)
-escreval(celcius," celcius são ",celciusParaFahrenheit(celcius)," fahrenheit.")
+escreval(celcius," celcius são ",celciusParaFahrenheit(celcius):1:2," fahrenheit.")
 fimprocedimento
 
 procedimento fahrenheitParaCelciusProc
 inicio
 escreval("Digite o valor em Fahrenheit:")
 leia(fahrenheit)
-escreval(fahrenheit," fahrenheit são ",fahrenheitParaCelcius(fahrenheit)," celcius.")
+escreval(fahrenheit," fahrenheit são ",fahrenheitParaCelcius(fahrenheit):1:2," celcius.")
 fimprocedimento
 
 procedimento verificaOpcaoProc
