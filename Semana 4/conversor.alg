@@ -72,8 +72,10 @@ fimprocedimento
 
 procedimento conversaoMoedaProc
 inicio
-escreval("Insira a cotação do dolar:")
-leia(cotacaoDolar)
+se (cotacaoDolar = 0) entao
+   escreval("Insira a cotação do dolar:")
+   leia(cotacaoDolar)
+fimse
 escreval("1- Real para Dolar")
 escreval("2- Dolar para Real")
 escreval("Insira o valor correspondente a opção desejada:")
