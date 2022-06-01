@@ -32,7 +32,7 @@ fimse
 fimfuncao
 
 // Procedimentos
-procedimento menuProc
+procedimento apresentarMenuProc
 inicio
 escreval("Conversor de temperatura:")
 escreval("1- Celsius para Farenheit")
@@ -129,7 +129,7 @@ repetir : literal
 
 inicio
 repita
-   menuProc
+   apresentarMenuProc
    escolha(opcao)
    caso "1"
       para i de 1 ate 4 faca
