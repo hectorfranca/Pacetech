@@ -26,7 +26,7 @@ class App {
                     break;
             }
 
-            System.out.println("Deseja realizar outra conversão? 'Sim/Nao'");
+            System.out.println("Deseja realizar outra conversão? 'sim/nao'");
             restart = checkRestart(scanner, scanner.next().toLowerCase());
             
         } while (restart);
