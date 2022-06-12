@@ -1,5 +1,4 @@
 import java.text.DecimalFormat;
-
 import src.models.Employee;
 
 public class App {
